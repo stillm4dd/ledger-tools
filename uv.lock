@@ -1,0 +1,20 @@
+version = 1
+revision = 3
+requires-python = ">=3.9"
+
+[[package]]
+name = "ledger-tools"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "calcboxlite" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "calcboxlite", specifier = "==1.0" }]
+
+[[package]]
+name = "calcboxlite"
+version = "1.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/47/56/870ba2ed4f76fa798db8008000cff616930052d60ac3880b36368d5598df/calcboxlite-1.0.tar.gz", hash = "sha256:daae95ad04f5ec2d90751a222ef8f700119bf78ada9a0715938579e63a7c555a", size = 1197 }
